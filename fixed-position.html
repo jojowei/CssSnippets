@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+	    <meta name="author" content="Jojo Wei" />
+	    <meta name="generator" content="Sublime Text 3" />
+	    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Fixed-Position Layout</title>
+    <style>
+      body{
+        padding-top:80px;
+      }
+    </style>
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="brand">前端开发</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">主页</a></li>
+              <li><a href="#">关于</a></li>
+              <li><a href="#">联系我们</a></li>
+              <li class="dropdown">
+                  <a class="dropdown-toggle" href="#" data-toggle="dropdown">下拉菜单<b class="caret"></b></a>
+
+                  <ul class="dropdown-menu">
+                    <li><a href="#">功能1</a></li>
+                    <li><a href="#">功能1</a></li>
+                    <li><a href="#">功能1</a></li>
+                    <li><a href="#">功能1</a></li>
+                    <li class="divider"><a href="#">功能1</a></li>
+                    <li class="nav-header">导航头部</li>
+                    <li><a href="#">功能1</a></li>
+                  </ul>
+
+                  <form action="" class="navbar-form pull-right">
+                     <input type="text" class="span2" placehoder="Account">
+                     <input type="password" class="span2" placeholder="password">
+                     <button type="submit" class="btn">登录</button>
+                  </form>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="jumbotron">
+          <h1>hello, bootstrap</h1>
+          <p>sdfafasdfdasfsadfdsfsdfsadfadsfasdfasfsdfsdfasdfsafsfsafasfsdfsafsafasfasfasfasfasfasfasfasfasdfdsaf</p>
+          <p><a href="#" target="_blank" class="btn btn-primary btn-lg">了解更多 &raquo; &raquo; </a></p>       
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h2>标题1</h2>
+          <p>dfasfjsadfjsladjfsalfjsaldfjsadldfjsdaklfjdskfjdsalfjaslfjsaddd</p>
+          <p><a href="#" target="_blank" class="btn">查看标题 &raquo; &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>标题1</h2>
+          <p>dfasfjsadfjsladjfsalfjsaldfjsadldfjsdaklfjdskfjdsalfjaslfjsaddd</p>
+          <p><a href="#" target="_blank" class="btn">查看标题 &raquo; &raquo;</a></p>        </div>
+        <div class="col-md-4">
+          <h2>标题1</h2>
+          <p>dfasfjsadfjsladjfsalfjsaldfjsadldfjsdaklfjdskfjdsalfjaslfjsaddd</p>
+          <p><a href="#" target="_blank" class="btn">查看标题 &raquo; &raquo;</a></p>          
+        </div>
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; Jojo Wei 2019</p>
+      </footer>
+
+    </div>
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
