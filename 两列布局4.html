@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>6. 两列布局4_左右两列固定宽度_绝对布局定位_采用绝对定位实现两列固定布局</title>
+	<style type="text/css">
+		.container {
+			position:absolute;    /* 绝对定位 */
+			left: 0;  /*左边定位起始点 */
+			right: 0;   /*右边定位起始点 */
+
+			/*这里的绝对定位也可以用相对定位，此时不需要再另外定位left和right了. 但是图形有变化哎！和之前不一样了。 */
+			/*position: relative;   /* 相对定位 */ 
+
+			margin: auto; /* 左右边距自动挤压，即 自动居中*/
+
+			max-width: 960px; 
+			background-color: #000000; /* 不懂为什么不现显示背景色黑色 */
+
+		}
+
+		.left {
+			position: absolute;
+			top: 0;
+			left: 0; 
+
+			width: 200px; 
+			height: 600px;
+
+			background-color: #00ff00;
+		}
+
+		.right {
+			position: absolute;
+			top: 0;
+			right: 0; 
+
+			width: 750px; 
+			height: 600px; 
+
+			background-color: #0000ff; 
+		}
+	</style>
+</head>
+<body>
+	<!-- DOM -->
+	<div class="container clear">
+		<div class="left">左侧</div>
+		<div class="right">右侧</div>
+	</div>
+</body>
+</html>
