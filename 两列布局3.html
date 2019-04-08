@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>5. 两列布局_左右固定_自己撑开父块级(伪类方式)</title>
+	<style type="text/css">
+		.container {
+			width: 960px; 
+			margin: 0 auto; /* 居中 */
+			overflow: hidden; /* 溢出部分隐藏。 为子元素撑开父元素做准备 */
+			background-color: #0000ff; 
+		}
+
+		.clear {
+			-ms-zoom: 1; /*Zoom属性是IE浏览器的专有属性，Firefox等浏览器不支撑。它可以设置或检索对象的缩放比例。除此之外，它还可以触发ie的hasLayout属性，清除浮动、清除margin的重叠等。*/
+			/* 我注释掉这句后，显示效果仍然相同。 不知道删除是或否会有隐患 */
+		}
+
+		.clear : after {  /* 子类撑开父类 */
+			content: '';
+			display: block; /* inline-block 也一样可以 */
+			clear: both; /* 清除 */
+		}
+
+		.left {
+			width: 200px;
+			height: 600px; 
+			float: left; 
+			background-color: #ff0000;
+		}
+
+		.right {
+			width: 750px; 
+			height: 600px; 
+			float: right; 
+			background-color: #00ff00; 
+		}
+	</style>
+</head>
+<body>
+	<!-- DOM -->
+	<div class="container clear">
+		<div class="left">左侧</div>
+		<div class="right">右侧</div>
+	</div>
+
+</body>
+</html>
