@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>3. 两列布局1： 左边栏固定宽度_右边主体自适应</title>
+	<style type="text/css">
+		.left {
+			width: 200px;
+			height: 600px; 
+			float: left;  			/*flex: left; 会换行显示。flex自带回车键效果。*/
+			background-color: skyblue; 
+		}
+
+		.main {
+			height: 600px;
+	        background-color: cyan;
+	        margin-left:200px; /*写不写这行代码，我这边显示是一样的。目前不清楚省略会有什么后果。*/
+		}
+	</style>
+</head>
+<body>
+	<!-- DOM -->
+	<div class="left">左侧</div>
+	<div class="main">右侧_主体</div>
+
+</body>
+</html>
