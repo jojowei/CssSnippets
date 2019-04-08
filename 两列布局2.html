@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>4. 两列布局2： 左边主体自适应_右边栏固定宽度</title>
+	<style type="text/css"> .{display: inline-block;}
+		.right {
+			width: 200px;
+			height: 600px; 
+			float: right;  			/*flex: left; 会换行显示。flex自带回车键效果。*/
+			background-color: skyblue; 
+		}
+
+		.main {
+			height: 600px;
+	        background-color: cyan;
+	        margin-right:200px; /*写不写这行代码，我这边显示是一样的。目前不清楚省略会有什么后果。*/
+		}
+	</style>
+</head>
+<body>
+	<!-- DOM -->
+
+	<div class="right">右侧</div>
+	<div class="main">左侧_主体</div>	
+	<!-- 两个div交换顺序位置，则不能同行显示。原因不详 -->
+
+<!-- 
+	<div class="main">左侧_主体</div>
+	<div class="right">右侧</div>	
+ -->
+
+</body>
+</html>
