@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2. 单列布局2：头尾自适应页面宽度_主体固定宽度</title>
+	<style type="text/css">
+		.container {
+			max-width: 960px;  /*最大宽度*/
+			margin: 0 auto; /*水平居中*/
+		}
+
+		.header {
+			height:50px; 
+			background-color:#ff0000; 
+		}
+		.main {
+			height: 600px; 
+			background-color:#00ff00;
+		}
+		.footer {
+			height:50px; 
+			background-color:#0000ff; 			
+		}
+
+	</style>
+</head>
+<body>
+    <!-- DOM -->
+		<!-- 头部 -->
+		<div class="header">
+			<div class="container">头部</div>
+		</div>
+
+		<!-- 主体 -->
+		<div class="main">
+			<div class="container">主体</div>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="footer">
+			<div class="container">footer</div>
+		</div>
+	
+
+</body>
+</html>
